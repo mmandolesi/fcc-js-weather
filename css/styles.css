@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://raw.githubusercontent.com/mand0/images/master/swirl_pattern.png);
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+}
+
+.containerr {
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+body h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  color: #c0392b;
+  display: inline;
+  /*font-weight: 300;*/
+  margin-right: 20px;
+}
+
+body p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #3b3852;
+  margin-top: 30px;
+
+}
+
+body h2 {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  color: #c0392b;
+
+}
+
+.forcast-container {
+  font-size: 20px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#summary {
+  margin-bottom: 40px;
+
+}
+
+#currentWeather {
+  /*display: inline-block;*/
+  font-weight: bold;
+  /*background-color: #ecf0f1;*/
+  /*border: 1px solid red;*/
+  /*border-radius: 40px;*/
+  /*width: 300px;*/
+}
+
+/*#currentWeather:after {
+  content: '\A';
+  white-space: pre;
+}*/
+
+[id*="forcast"] {
+  display: inline-block;
+  width: 350px;
+  font-weight: bold;
+  margin: 100px 20px 20px 1px;
+  /*background-color: #ecf0f1;*/
+  /*border-radius: 40px;*/
+  /*border: 1px solid red;*/
+  padding: 3px;
+
+  /*adding crazy clouds*/
+
+  background: #f2f9fe;
+  background: linear-gradient(top, #f2f9fe 5%, #d5d5d5 100%);
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d5d5d5 100%);
+  background: -moz-linear-gradient(top, #f2f9fe 5%, #d5d5d5 100%);
+  background: -ms-linear-gradient(top, #f2f9fe 5%, #d5d5d5 100%);
+  background: -o-linear-gradient(top, #f2f9fe 5%, #d5d5d5 100%);
+  border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+  position: relative;
+}
+
+
+[id*="forcast"]:after, [id*="forcast"]:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+[id*="forcast"]:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+[id*="forcast"]:before {
+	width: 180px; height: 170px;
+	top: -90px; right: 50px;
+
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+
+#warning {
+  margin-top: 10px;
+}
+
+.input-group {
+  margin: 30px auto 5px auto;
+  width: 30%;
+}
+
+#convertTemp {
+  /*display: inline-block;*/
+  margin-left: 750px;
+  margin-top: -230px;
+  border-radius: 100px;
+  font-size: 20px;
+
+}
